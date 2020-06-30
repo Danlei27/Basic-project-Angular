@@ -3,13 +3,17 @@
     <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon>
     </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>Usuário</button>
-  <button mat-menu-item>Lista</button>
-  <button mat-menu-item>Logout</button>
+  <button mat-menu-item [routerLink]="['/usuario']">Usuário</button>
+  <button mat-menu-item [routerLink]="['/lista']">Lista</button>
+  <button mat-menu-item [routerLink]="['/logout']">Logout</button>
+  <button mat-menu-item [routerLink]="['']">Home</button>
 </mat-menu>
   </button>
-  <span id="sp">Almoxarifado</span>
+  <span id="sp" [routerLink]="['']">Almoxarifado</span>
   <span class="example-spacer"></span>
+  <button mat-icon-button aria-label="Example icon button with a home icon">
+    <mat-icon [routerLink]="['']">home</mat-icon>
+  </button>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
   </button>
@@ -17,16 +21,4 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
-
-
-<mat-selection-list #shoes>
-  <mat-list-option *ngFor="let shoe of typesOfShoes">
-    {{ shoe }}
-  </mat-list-option>
-</mat-selection-list>
-
-<p>
-  Options selected: {{ shoes.selectedOptions.selected.length }}
-</p>
-
 <router-outlet></router-outlet>
