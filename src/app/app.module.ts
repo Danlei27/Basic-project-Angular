@@ -9,6 +9,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,16 @@ import { HomeComponent } from './home/home.component'
     UsuarioComponent,
     ListaProdutosComponent,
     LogoutComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+     
   ],
   providers: [],
   bootstrap: [AppComponent]
