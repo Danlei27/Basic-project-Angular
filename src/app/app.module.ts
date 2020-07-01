@@ -9,7 +9,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from './home/auth.service';
 
 @NgModule({
   declarations: [
@@ -25,10 +26,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule,
+    
      
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
