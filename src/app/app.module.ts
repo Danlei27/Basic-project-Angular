@@ -10,6 +10,7 @@ import { ListaProdutosComponent } from './lista-produtos/lista-produtos.componen
 import { HomeComponent } from './home/home.component'
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './home/auth.service';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AuthService } from './home/auth.service';
      
   ],
   providers: [
-    AuthService
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
