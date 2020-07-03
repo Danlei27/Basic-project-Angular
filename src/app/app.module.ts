@@ -8,16 +8,17 @@ import { MaterialModule } from './material-module';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 import { HomeComponent } from './home/home.component'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './home/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuarioComponent,
     ListaProdutosComponent,    
-    HomeComponent,
+    HomeComponent, NovoProdutoComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +26,7 @@ import { AuthGuard } from './guards/auth.guard';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    ReactiveFormsModule
     
      
   ],

@@ -1,0 +1,32 @@
+.example-container{
+    margin: 4% 0 0 30%;
+}
+
+mat-form-field{
+    margin: 2%;
+}
+.font{
+    font-size:30px;
+    text-align: center;
+}
+
+input{
+    height: 100px ;
+    font-size:25px;
+}
+
+mat-card{
+    align-items: center;
+    /* text-align: center; */
+    font-size: 40px;
+    margin:10px 30%;
+    width:600px;
+    height: 100px ;
+    background-color:rgb(45, 40, 104);
+    color:white;
+}
+
+#buttons{
+    margin-left: 30%;
+    
+}

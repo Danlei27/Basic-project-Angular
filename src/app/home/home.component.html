@@ -1,13 +1,18 @@
-<div  class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Usuário</mat-label>
-      <input  id="usuario" [(ngModel)]="usuario.nome" matInput placeholder="Ex. Daniel">
+<mat-card>Login De Usuário</mat-card><br>
+<mat-card>
+  <div class="example-form" >
+    <mat-form-field appearance="fill"color="warn" class="example-full-width">
+      <mat-label >Usuário</mat-label>
+      <input autofocus  [(ngModel)]="usuario.nome" matInput placeholder="Admin" type="text">
     </mat-form-field>
-  
-    <mat-form-field class="example-full-width">
+    <mat-form-field appearance="fill" color="warn" class="example-full-width">
       <mat-label>Senha</mat-label>
       <input  id="senha" [(ngModel)]="usuario.senha" matInput type="password">
+
     </mat-form-field>
     <button mat-raised-button color="warn" (click)="fazerLogin()" type="submit">Entrar</button>
   </div>
+</mat-card><br>
+<mat-card style="text-align:right;">Almoxarifado</mat-card><br>
+  
   

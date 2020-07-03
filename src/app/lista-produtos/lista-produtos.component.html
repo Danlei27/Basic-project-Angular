@@ -1,4 +1,9 @@
 <mat-selection-list #shoes>
+  <button mat-mini-fab routerLink="/produto"color="accent" aria-label="Example icon button with a plus one icon">
+    <mat-icon>plus_one</mat-icon>
+  </button>
+  <button mat-button id="buttons" color="primary">Editar</button>
+  <button mat-button color="warn">Apagar</button>
     <mat-list-option *ngFor="let shoe of typesOfShoes">
       {{ shoe }}
     </mat-list-option>

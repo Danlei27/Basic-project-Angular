@@ -15,23 +15,24 @@ export class AuthService {
   constructor(private router: Router) { }
 
   fazerLogin(usuario: Usuario){
+  
+    if (usuario.nome ==  's' && usuario.senha == 's'){
 
-    if (usuario.nome === 'Admin' && usuario.senha === '123456'){
-      
-      this.usuarioAutenticado = true;
+      this. usuarioAutenticado = true;
 
       this.mostrarMenuEmitter.emit(true);
       
       this.router.navigate(['/usuario']);
-      
+            
     }else {
 
       this.mostrarMenuEmitter.emit(false);
       this.usuarioAutenticado = false;
-    }
-    
+      alert('Senha ou Usuário incorreto!')
+      
+    }    
   }
-
+  
   usuarioEstaAutenticado(){
     return this.usuarioAutenticado;
   }
