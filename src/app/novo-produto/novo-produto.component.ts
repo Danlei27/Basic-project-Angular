@@ -10,6 +10,8 @@ export class NovoProdutoComponent implements OnInit {
 
   form: FormGroup;
   
+  submitted = false;
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -19,4 +21,14 @@ export class NovoProdutoComponent implements OnInit {
     })
   }
 
+  hasError(field: string){
+    return this.form.get(field).errors;
+  }
+
+  onSubmit(){
+    this.submitted = true;
+    if(this.form.valid){
+      console.log(this.form)
+    }
+  }
 }

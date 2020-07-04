@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './home/auth.service';
 import { AuthGuard } from './guards/auth.guard';
 import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,13 +27,16 @@ import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+    
     
      
   ],
   providers: [
     AuthService,
     AuthGuard
+
   ],
   bootstrap: [AppComponent]
 })

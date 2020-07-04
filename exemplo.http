@@ -1,0 +1,27 @@
+ http://localhost:3000/produtos
+
+###
+ 
+ POST http://localhost:3000/produtos HTTP/1.1
+ content-type: application/json
+
+ {
+    "nome": "feijão preto", "quantidades": 111
+ }
+
+###
+ 
+ PUT http://localhost:3000/produtos/2 HTTP/1.1
+ content-type: application/json
+
+ {
+    "nome": "Macarrão", "quantidades": 11
+ }
+
+###
+ 
+ DELETE http://localhost:3000/produtos/4
+
+###
+ 
+ GET http://localhost:3000/produtos/1 

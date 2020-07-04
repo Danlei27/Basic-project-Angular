@@ -10,7 +10,7 @@ import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'lista', component: ListaProdutosComponent, canActivate: [AuthGuard]},
+  { path: 'lista', component: ListaProdutosComponent},
   { path: 'usuario', component: UsuarioComponent, canActivate: [AuthGuard] },
   { path: 'produto', component: NovoProdutoComponent, canActivate: [AuthGuard]}
   
