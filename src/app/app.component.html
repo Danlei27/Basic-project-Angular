@@ -3,15 +3,15 @@
     <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon>
     </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item [routerLink]="['/usuario']">Usuário</button>
   <button mat-menu-item [routerLink]="['/lista']">Lista</button>
+  <button mat-menu-item [routerLink]="['/produto']">Adicionar</button>
   <button mat-menu-item [routerLink]="['/logout']" (click)="logout()">Logout</button>
 </mat-menu>
   </button>
-  <span id="sp" [routerLink]="['/usuario']">Almoxarifado</span>
+  <span id="sp" [routerLink]="['/']">Almoxarifado</span>
   <span class="example-spacer"></span>
   <button mat-icon-button aria-label="Example icon button with a home icon">
-    <mat-icon [routerLink]="['/usuario']">home</mat-icon>
+    <mat-icon [routerLink]="['/']">home</mat-icon>
   </button>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>

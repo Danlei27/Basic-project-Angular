@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Produtos } from './produtos';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ListaService {
 
-  private readonly API = 'http://localhost:3000/produtos';
+  private readonly API  = `${environment.API}produtos`;
   
   constructor(private http: HttpClient) { }
 

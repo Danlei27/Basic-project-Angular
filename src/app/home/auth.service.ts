@@ -16,13 +16,13 @@ export class AuthService {
 
   fazerLogin(usuario: Usuario){
   
-    if (usuario.nome ==  's' && usuario.senha == 's'){
+    if (usuario.nome ==  null && usuario.senha == null){
 
       this. usuarioAutenticado = true;
 
       this.mostrarMenuEmitter.emit(true);
       
-      this.router.navigate(['/usuario']);
+      this.router.navigate(['/lista']);
             
     }else {
 
